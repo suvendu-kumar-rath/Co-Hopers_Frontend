@@ -11,23 +11,18 @@ export function LoadingAnimation({ onComplete }: LoadingAnimationProps) {
   const [isVisible, setIsVisible] = useState(true);
 
   useEffect(() => {
-    console.log('LoadingAnimation mounted');
-    
     // Simple timer - show for 6 seconds then complete
     const timer = setTimeout(() => {
-      console.log('Loading timer completed');
       setIsVisible(false);
       setTimeout(onComplete, 500);
     }, 6000);
 
     return () => {
-      console.log('LoadingAnimation cleanup');
       clearTimeout(timer);
     };
   }, [onComplete]);
 
   const handleVideoEnd = () => {
-    console.log('Video ended');
     setIsVisible(false);
     setTimeout(onComplete, 500);
   };
@@ -55,10 +50,6 @@ export function LoadingAnimation({ onComplete }: LoadingAnimationProps) {
               playsInline
               className="w-full h-full object-cover"
               onEnded={handleVideoEnd}
-              onLoadedData={() => console.log('Video loaded successfully')}
-              onError={(e) => console.error('Video failed to load:', e)}
-              onCanPlay={() => console.log('Video can play')}
-              onPlay={() => console.log('Video started playing')}
             >
               <source src="/images/lol.mp4" type="video/mp4" />
               Your browser does not support the video tag.

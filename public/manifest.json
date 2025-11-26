@@ -1,0 +1,16 @@
+{
+  "name": "Cohopers",
+  "short_name": "Cohopers",
+  "description": "Premium Coworking Spaces in Bhubaneswar",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#004efb",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "any",
+      "type": "image/x-icon"
+    }
+  ]
+}

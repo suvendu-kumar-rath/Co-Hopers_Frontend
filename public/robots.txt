@@ -1,0 +1,10 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+
+# Disallow access to admin or private pages
+# Disallow: /admin/
+# Disallow: /api/
+
+# Sitemap location
+Sitemap: https://cohopers.in/sitemap.xml
