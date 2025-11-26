@@ -1,16 +1,11 @@
 import { NavItem, Feature, PricingPlan, Testimonial, GalleryItem } from '@/types';
 
-// Get meeting room URL from environment variable (Next.js runtime)
-export const meetingRoomUrl = process.env.NEXT_PUBLIC_MEETING_ROOM_URL || '/meeting-room';
-export const servicesUrl = process.env.NEXT_PUBLIC_SERVICES_URL || '/services';
-// Navigation Item
-
 export const navItems: NavItem[] = [
   { name: 'Home', href: '/' },
   { name: 'About', href: '/about' },
-  { name: 'Meeting Room', href: meetingRoomUrl, external: true },
+  { name: 'Meeting Room', href: '/meeting-room' },
   { name: 'Gallery', href: '/gallery' },
-  { name: 'Service', href: servicesUrl, external: true },
+  { name: 'Pricing', href: '/pricing' },
   { name: 'Contact', href: '/contact' },
 ];
 
