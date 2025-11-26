@@ -24,10 +24,14 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const handleNavClick = (href: string) => {
+  const handleNavClick = (href: string, external?: boolean) => {
     setIsOpen(false);
+    if (external && href.startsWith('http')) {
+      window.open(href, '_blank', 'noopener,noreferrer');
+      return;
+    }
     if (href.startsWith('/')) {
-      // External page navigation
+      // Internal page navigation
       window.location.href = href;
     } else {
       // Internal section navigation
@@ -85,16 +89,31 @@ export default function Navbar() {
             <div className="hidden lg:block">
               <div className="flex items-center space-x-8">
                 {navItems.map((item, index) => (
-                  <motion.button
-                    key={item.name}
-                    initial={{ opacity: 0, y: -20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: index * 0.1 }}
-                    onClick={() => handleNavClick(item.href)}
-                    className="theme-text-primary hover:text-[#00ffe0] px-3 py-2 text-sm font-medium transition-colors duration-200 uppercase tracking-wide"
-                  >
-                    {item.name}
-                  </motion.button>
+                  item.external && item.href.startsWith('http') ? (
+                    <motion.a
+                      key={item.name}
+                      initial={{ opacity: 0, y: -20 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ delay: index * 0.1 }}
+                      href={item.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="theme-text-primary hover:text-[#00ffe0] px-3 py-2 text-sm font-medium transition-colors duration-200 uppercase tracking-wide"
+                    >
+                      {item.name}
+                    </motion.a>
+                  ) : (
+                    <motion.button
+                      key={item.name}
+                      initial={{ opacity: 0, y: -20 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ delay: index * 0.1 }}
+                      onClick={() => handleNavClick(item.href, item.external)}
+                      className="theme-text-primary hover:text-[#00ffe0] px-3 py-2 text-sm font-medium transition-colors duration-200 uppercase tracking-wide"
+                    >
+                      {item.name}
+                    </motion.button>
+                  )
                 ))}
               </div>
             </div>
@@ -144,16 +163,31 @@ export default function Navbar() {
             >
               <div className="px-4 pt-4 pb-6 space-y-2">
                 {navItems.map((item, index) => (
-                  <motion.button
-                    key={item.name}
-                    initial={{ opacity: 0, x: -20 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ delay: index * 0.1 }}
-                    onClick={() => handleNavClick(item.href)}
-                    className="theme-text-primary hover:text-[#00ffe0] block px-3 py-3 text-base font-medium w-full text-left transition-colors duration-200 uppercase tracking-wide"
-                  >
-                    {item.name}
-                  </motion.button>
+                  item.external && item.href.startsWith('http') ? (
+                    <motion.a
+                      key={item.name}
+                      initial={{ opacity: 0, x: -20 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      transition={{ delay: index * 0.1 }}
+                      href={item.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="theme-text-primary hover:text-[#00ffe0] block px-3 py-3 text-base font-medium w-full text-left transition-colors duration-200 uppercase tracking-wide"
+                    >
+                      {item.name}
+                    </motion.a>
+                  ) : (
+                    <motion.button
+                      key={item.name}
+                      initial={{ opacity: 0, x: -20 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      transition={{ delay: index * 0.1 }}
+                      onClick={() => handleNavClick(item.href, item.external)}
+                      className="theme-text-primary hover:text-[#00ffe0] block px-3 py-3 text-base font-medium w-full text-left transition-colors duration-200 uppercase tracking-wide"
+                    >
+                      {item.name}
+                    </motion.button>
+                  )
                 ))}
                 <div className="pt-4">
                   <button className="btn-primary w-full justify-center">
