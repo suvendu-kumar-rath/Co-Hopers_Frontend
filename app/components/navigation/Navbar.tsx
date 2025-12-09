@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, ShoppingCart, ArrowRight } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { navItems, contactInfo } from '@/lib/constants';
 import Image from 'next/image';
 
@@ -120,27 +120,6 @@ export default function Navbar() {
 
             {/* Right Side Actions */}
             <div className="flex items-center gap-4">
-              {/* Shopping Cart */}
-              <motion.button
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                className="theme-text-primary hover:text-[#00ffe0] transition-colors duration-200"
-              >
-                <ShoppingCart size={24} />
-              </motion.button>
-
-              {/* CTA Button */}
-              <motion.button
-                initial={{ opacity: 0, scale: 0.8 }}
-                animate={{ opacity: 1, scale: 1 }}
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="btn-primary hidden sm:flex"
-              >
-                BOOK TEST DAY
-                <ArrowRight size={16} />
-              </motion.button>
-
               {/* Mobile menu button */}
               <button
                 onClick={() => setIsOpen(!isOpen)}
@@ -189,12 +168,6 @@ export default function Navbar() {
                     </motion.button>
                   )
                 ))}
-                <div className="pt-4">
-                  <button className="btn-primary w-full justify-center">
-                    BOOK TEST DAY
-                    <ArrowRight size={16} />
-                  </button>
-                </div>
               </div>
             </motion.div>
           )}
