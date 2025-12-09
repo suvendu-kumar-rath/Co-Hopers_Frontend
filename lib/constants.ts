@@ -1,8 +1,10 @@
 import { NavItem, Feature, PricingPlan, Testimonial, GalleryItem } from '@/types';
 
-// Get URLs from environment variables
-const meetingRoomUrl = process.env.NEXT_PUBLIC_MEETING_ROOM_URL || '/meeting-room';
-const servicesUrl = process.env.NEXT_PUBLIC_SERVICES_URL || '/services';
+// Get URLs from environment variables (default to live site URLs)
+const meetingRoomUrl =
+  process.env.NEXT_PUBLIC_MEETING_ROOM_URL || 'https://cohopers.vercel.app/meeting-room';
+const servicesUrl =
+  process.env.NEXT_PUBLIC_SERVICES_URL || 'https://cohopers.vercel.app/services';
 
 export const navItems: NavItem[] = [
   { name: 'Home', href: '/' },
