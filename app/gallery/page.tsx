@@ -9,7 +9,7 @@ import Image from 'next/image';
 const baseImages = [
   {
     id: 1,
-    src: '/images/gallery/Cohopers_1.jpeg',
+    src: '/images/gallery/cohopers1.jpeg',
     alt: 'Modern coworking space with open desks',
     category: 'workspace',
     title: 'Open Workspace Area',
@@ -18,7 +18,7 @@ const baseImages = [
   },
   {
     id: 2,
-    src: '/images/gallery/cohopers2.jpeg',
+    src: '/images/gallery/cohopers2.jpg',
     alt: 'Executive meeting room with modern furniture',
     category: 'meeting',
     title: 'Executive Meeting Room',
@@ -27,7 +27,7 @@ const baseImages = [
   },
   {
     id: 3,
-    src: '/images/gallery/cohopers3.jpg',
+    src: '/images/gallery/cohopers3.jpeg',
     alt: 'Private office cabin with glass walls',
     category: 'office',
     title: 'Private Office Cabin',
@@ -36,7 +36,7 @@ const baseImages = [
   },
   {
     id: 4,
-    src: '/images/gallery/co.jpeg',
+    src: '/images/gallery/gallery1.jpeg',
     alt: 'Coffee bar and lounge area',
     category: 'lounge',
     title: 'Coffee Bar & Lounge',
@@ -45,7 +45,7 @@ const baseImages = [
   },
   {
     id: 5,
-    src: '/images/workspaces/meeting-room.png',
+    src: '/images/gallery/gallery2.jpeg',
     alt: 'Conference room with large table',
     category: 'meeting',
     title: 'Conference Room',
@@ -54,7 +54,7 @@ const baseImages = [
   },
   {
     id: 6,
-    src: '/images/workspaces/private office.png',
+    src: '/images/gallery/gallery3.jpeg',
     alt: 'Executive cabin with premium furniture',
     category: 'office',
     title: 'Executive Cabin',
@@ -63,7 +63,7 @@ const baseImages = [
   },
   {
     id: 7,
-    src: '/images/workspaces/open-desk.png',
+    src: '/images/gallery/gallery4.jpeg',
     alt: 'Hot desk area with modern seating',
     category: 'workspace',
     title: 'Hot Desk Area',
@@ -72,7 +72,7 @@ const baseImages = [
   },
   {
     id: 8,
-    src: '/images/workspaces/meeting-rooms.png',
+    src: '/images/gallery/gallery5.jpeg',
     alt: 'Multiple meeting rooms',
     category: 'meeting',
     title: 'Meeting Rooms',
@@ -81,7 +81,7 @@ const baseImages = [
   },
   {
     id: 9,
-    src: '/images/workspaces/lounge-area.png',
+    src: '/images/gallery/gallery6.jpeg',
     alt: 'Comfortable lounge seating area',
     category: 'lounge',
     title: 'Lounge Area',
@@ -90,30 +90,103 @@ const baseImages = [
   },
   {
     id: 10,
-    src: '/images/workspaces/coffee-bar.png',
+    src: '/images/gallery/gallery7.jpeg',
     alt: 'Coffee bar with modern design',
     category: 'lounge',
     title: 'Coffee Bar',
     description: 'Premium coffee bar with professional equipment',
     tags: ['coffee bar', 'premium', 'professional']
+  },  {
+    id: 11,
+    src: '/images/gallery/gallery8.jpeg',
+    alt: 'Cohopers workspace',
+    category: 'workspace',
+    title: 'Workspace',
+    description: 'Modern coworking space at Cohopers',
+    tags: ['workspace', 'coworking']
   },
-];
+  {
+    id: 12,
+    src: '/images/gallery/gallery9.jpeg',
+    alt: 'Cohopers workspace',
+    category: 'workspace',
+    title: 'Workspace',
+    description: 'Modern coworking space at Cohopers',
+    tags: ['workspace', 'coworking']
+  },
+  {
+    id: 13,
+    src: '/images/gallery/gallery10.jpg',
+    alt: 'Cohopers workspace',
+    category: 'workspace',
+    title: 'Workspace',
+    description: 'Modern coworking space at Cohopers',
+    tags: ['workspace', 'coworking']
+  },
+  {
+    id: 14,
+    src: '/images/gallery/gallery11.jpg',
+    alt: 'Cohopers workspace',
+    category: 'workspace',
+    title: 'Workspace',
+    description: 'Modern coworking space at Cohopers',
+    tags: ['workspace', 'coworking']
+  },
+  {
+    id: 15,
+    src: '/images/gallery/gallery12.jpg',
+    alt: 'Cohopers workspace',
+    category: 'workspace',
+    title: 'Workspace',
+    description: 'Modern coworking space at Cohopers',
+    tags: ['workspace', 'coworking']
+  },
+  {
+    id: 16,
+    src: '/images/gallery/gallery13.jpg',
+    alt: 'Cohopers workspace',
+    category: 'workspace',
+    title: 'Workspace',
+    description: 'Modern coworking space at Cohopers',
+    tags: ['workspace', 'coworking']
+  },
+  {
+    id: 17,
+    src: '/images/gallery/gallery14.jpg',
+    alt: 'Cohopers workspace',
+    category: 'workspace',
+    title: 'Workspace',
+    description: 'Modern coworking space at Cohopers',
+    tags: ['workspace', 'coworking']
+  },
+  {
+    id: 18,
+    src: '/images/gallery/gallery15.jpg',
+    alt: 'Cohopers workspace',
+    category: 'workspace',
+    title: 'Workspace',
+    description: 'Modern coworking space at Cohopers',
+    tags: ['workspace', 'coworking']
+  },
+  {
+    id: 19,
+    src: '/images/gallery/gallery16.jpg',
+    alt: 'Cohopers workspace',
+    category: 'workspace',
+    title: 'Workspace',
+    description: 'Modern coworking space at Cohopers',
+    tags: ['workspace', 'coworking']
+  },];
 
-// Create more images for infinite scroll by duplicating and varying
-const galleryImages = [
-  ...baseImages,
-  ...baseImages.map((img, index) => ({ ...img, id: img.id + 10 })),
-  ...baseImages.map((img, index) => ({ ...img, id: img.id + 20 })),
-  ...baseImages.map((img, index) => ({ ...img, id: img.id + 30 })),
-  ...baseImages.map((img, index) => ({ ...img, id: img.id + 40 })),
-];
+// Use all images without duplication
+const galleryImages = [...baseImages];
 
 const categories = [
-  { name: 'All', count: 50, icon: '🏢' },
-  { name: 'workspace', count: 15, icon: '💼' },
-  { name: 'meeting', count: 15, icon: '🤝' },
-  { name: 'office', count: 10, icon: '🏢' },
-  { name: 'lounge', count: 10, icon: '☕' }
+  { name: 'All', count: 19, icon: '🏢' },
+  { name: 'workspace', count: 8, icon: '💼' },
+  { name: 'meeting', count: 4, icon: '🤝' },
+  { name: 'office', count: 3, icon: '🏢' },
+  { name: 'lounge', count: 4, icon: '☕' }
 ];
 
 export default function GalleryPage() {
