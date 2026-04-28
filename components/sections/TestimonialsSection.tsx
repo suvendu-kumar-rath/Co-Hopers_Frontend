@@ -1,7 +1,6 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import Image from 'next/image';
 import { testimonials } from '@/lib/constants';
 
 export default function TestimonialsSection() {
@@ -45,30 +44,10 @@ export default function TestimonialsSection() {
               </motion.p>
 
               <div className="flex flex-col items-center space-y-4">
-                <motion.div 
-                  className="relative w-20 h-20"
-                  whileHover={{ 
-                    scale: 1.1,
-                    rotate: 5,
-                    transition: { duration: 0.2 }
-                  }}
-                >
-                  <Image
-                    src={testimonial.avatar}
-                    alt={testimonial.name}
-                    fill
-                    className="object-cover rounded-full border-2 border-white/20 group-hover:border-[#004efb] transition-colors duration-300"
-                    sizes="80px"
-                    loading="lazy"
-                  />
-                </motion.div>
                 <div>
                   <h4 className="font-semibold text-white text-lg group-hover:text-[#004efb] transition-colors duration-300">
                     {testimonial.name}
                   </h4>
-                  <p className="text-white/80 text-base group-hover:text-white/90 transition-colors duration-300">
-                    {testimonial.role} at {testimonial.company}
-                  </p>
                 </div>
               </div>
             </motion.div>

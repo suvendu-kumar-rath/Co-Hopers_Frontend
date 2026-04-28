@@ -28,7 +28,7 @@ const contactDetails = [
   {
     icon: <Clock className="w-6 h-6" />,
     title: 'Hours',
-    details: ['Mon - Sat: 8:00 AM - 8:00 PM', 'Sunday: 10:00 AM - 6:00 PM'],
+    details: ['Mon-Sat: 10:00 AM-6:00 PM'],
     color: 'text-[#004efb]'
   }
 ];
@@ -272,13 +272,17 @@ export default function ContactPage() {
               transition={{ duration: 0.8 }}
               className="space-y-8"
             >
-              {/* Map Placeholder */}
-              <div className="bg-gray-200 h-64 rounded-lg flex items-center justify-center">
-                <div className="text-center">
-                  <MapPin className="w-12 h-12 text-[#004efb] mx-auto mb-4" />
-                  <p className="theme-text-secondary">Interactive Map</p>
-                  <p className="text-sm text-gray-500">{contactInfo.location}</p>
-                </div>
+              {/* Map */}
+              <div className="h-64 rounded-lg overflow-hidden">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3743.2!2d85.8051612!3d20.3490424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a1908e025984c55%3A0xee1fcd1f11e55141!2sDLF%20Cyber%20City!5e0!3m2!1sen!2sin!4v1"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                />
               </div>
 
               {/* Quick Contact */}
@@ -297,7 +301,7 @@ export default function ContactPage() {
                   </div>
                   <div className="flex items-center gap-3">
                     <Clock className="w-5 h-5 text-[#004efb]" />
-                    <span className="theme-text-secondary">Mon-Sat: 8AM-8PM</span>
+                    <span className="theme-text-secondary">Mon-Sat: 10 AM - 6PM</span>
                   </div>
                 </div>
               </div>
@@ -345,7 +349,7 @@ export default function ContactPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-[#004efb]">
+      {/* <section className="py-20 bg-[#004efb]">
         <div className="container-custom">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -369,7 +373,7 @@ export default function ContactPage() {
             </motion.button>
           </motion.div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }

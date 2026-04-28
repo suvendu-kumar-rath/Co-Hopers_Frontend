@@ -5,15 +5,15 @@ import { useState } from 'react';
 
 const galleryImages = [
   {
-    src: '/images/gallery/cohopers3.jpg',
+    src: '/images/gallery/cohopers1.jpeg',
     alt: 'Cohopers workspace interior'
   },
   {
-    src: '/images/gallery/Cohopers_1.jpeg',
+    src: '/images/gallery/cohopers2.jpg',
     alt: 'Cohopers meeting room'
   },
   {
-    src: '/images/gallery/cohopers2.jpeg',
+    src: '/images/gallery/cohopers3.jpeg',
     alt: 'Cohopers open workspace'
   }
 ];

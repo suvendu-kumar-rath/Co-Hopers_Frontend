@@ -110,25 +110,16 @@ export const pricingPlans: PricingPlan[] = [
 
 export const testimonials: Testimonial[] = [
   {
-    name: 'Sarah Johnson',
-    role: 'Founder',
-    company: 'TechStart Inc.',
-    content: 'The collaborative environment here has been instrumental in growing my startup. The networking opportunities are incredible!',
-    avatar: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=80&h=80'
+    name: 'PURANJAY SAHU',
+    content: 'This has a beautiful office friendly environment. It is one of its kind space in Bhubaneswar. This is equipped with latest and modern amenities to make your feel like working from the comfort of your home. This space also offers individual chambers conference room and different beverage options on demand. Apart from that, with a diverse network connections and mentoring support it makes a best place for young startups and entrepreneurs to grow and flourish in the journey.',
   },
   {
-    name: 'Michael Chen',
-    role: 'Digital Marketer',
-    company: 'Freelancer',
-    content: 'Best coworking space in the city! The amenities are top-notch and the community is so welcoming and supportive.',
-    avatar: 'https://images.pexels.com/photos/697509/pexels-photo-697509.jpeg?auto=compress&cs=tinysrgb&w=80&h=80'
+    name: 'Sasank Shekhar Mallick',
+    content: 'A well-organized co-working space with excellent facilities. Perfect for companies looking for a professional and productive work environment. Clean workspace, good management, and a positive atmosphere. Recommended ⭐',
   },
   {
-    name: 'Emily Rodriguez',
-    role: 'Product Manager',
-    company: 'InnovateCorp',
-    content: 'The meeting rooms are fantastic and the high-speed internet never lets me down. Perfect for client calls and presentations.',
-    avatar: 'https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=80&h=80'
+    name: 'Swapnnil Akewaar',
+    content: 'I would highly recommend Co Hoppers Work Studio Coworking spaces to anyone looking for a flexible and cost-effective workspace solution in the the Bhubaneshwar city. The amenities are great, the staff is friendly and helpful Especially Owner Mr. Sivasish Sir. The networking opportunities are a real plus. Whether you are a freelancer, small business owner, or remote worker, CoHoppers Work Studio has everything you need to be productive and successful.Thank You team for being so generous and supporting me in my difficult times. You guys are Awesome!',
   }
 ];
 

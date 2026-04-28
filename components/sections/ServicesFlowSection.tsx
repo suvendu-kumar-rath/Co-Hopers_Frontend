@@ -79,7 +79,7 @@ export default function ServicesFlowSection() {
                     x: hoveredService === row[0].id ? ['0%', '-100%'] : '0%'
                   }}
                   transition={{
-                    duration: hoveredService === row[0].id ? 15 : 0,
+                    duration: hoveredService === row[0].id ? 40 : 0,
                     ease: 'linear',
                     repeat: hoveredService === row[0].id ? Infinity : 0,
                     repeatType: 'loop'

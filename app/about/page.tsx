@@ -100,7 +100,7 @@ export default function AboutPage() {
                 </h1>
                 
                 <p className="text-lg md:text-xl lg:text-2xl theme-text-primary max-w-4xl mx-auto leading-relaxed">
-                  Embracing 8 years of excellence in coworking, we've grown from 1000 sq. ft to 14000 sq. ft at DLF Cybercity, Bhubaneswar.
+                  Embracing 8 years of excellence in coworking, we've grown from 1000 sq. ft to 20000 sq. ft at DLF Cybercity, Bhubaneswar.
                 </p>
               </motion.div>
             </div>
@@ -148,11 +148,11 @@ export default function AboutPage() {
               <div className="theme-text-primary font-semibold text-lg">Years of Excellence</div>
             </div>
             <div className="text-center space-y-4">
-              <div className="text-4xl font-bold theme-accent-primary">14,000</div>
+              <div className="text-4xl font-bold theme-accent-primary">20,000</div>
               <div className="theme-text-primary font-semibold text-lg">Sq Ft Current Space</div>
             </div>
             <div className="text-center space-y-4">
-              <div className="text-4xl font-bold theme-accent-primary">14x</div>
+              <div className="text-4xl font-bold theme-accent-primary">20x</div>
               <div className="theme-text-primary font-semibold text-lg">Growth from 1000 sq ft</div>
             </div>
           </motion.div>
@@ -186,7 +186,7 @@ export default function AboutPage() {
              >
                <div className="relative overflow-hidden bg-black shadow-2xl hover:shadow-3xl transition-all duration-500 group-hover:scale-105">
                  <Image
-                   src="/images/gallery/Cohopers_1.jpeg"
+                   src="/images/gallery/cohopers1.jpeg"
                    alt="Cohopers Workspace"
                    width={400}
                    height={300}
@@ -270,7 +270,7 @@ export default function AboutPage() {
              >
                <div className="relative overflow-hidden bg-black shadow-2xl hover:shadow-3xl transition-all duration-500 group-hover:scale-105">
                  <Image
-                   src="/images/workspaces/meeting-room.png"
+                   src="/images/workspaces/Executive%20cabin.jpeg"
                    alt="Professional Meeting Room"
                    width={400}
                    height={300}
@@ -291,7 +291,7 @@ export default function AboutPage() {
              >
                <div className="relative overflow-hidden bg-black shadow-2xl hover:shadow-3xl transition-all duration-500 group-hover:scale-105">
                  <Image
-                   src="/images/workspaces/open-desk.png"
+                   src="/images/workspaces/Single seat.jpeg"
                    alt="Open Desk Area"
                    width={400}
                    height={300}

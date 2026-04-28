@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
+import Link from 'next/link';
 
 export default function JoinCommunitySection() {
   return (
@@ -84,10 +85,10 @@ export default function JoinCommunitySection() {
           transition={{ duration: 0.6, delay: 0.6 }}
           className="text-center"
         >
-          <button className="btn-primary">
+          <Link href="/about" className="btn-primary">
             About Us
             <ArrowRight size={20} />
-          </button>
+          </Link>
         </motion.div>
       </div>
     </section>

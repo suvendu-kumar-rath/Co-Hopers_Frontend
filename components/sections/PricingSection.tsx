@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
+import Link from 'next/link';
 
 const pricingPlans = [
   {
@@ -16,7 +17,7 @@ const pricingPlans = [
       '300 MBPS internet',
       'Price includes electricity, AC, Office boy'
     ],
-    image: '/images/workspaces/open-desk.png',
+    image: '/images/workspaces/Single%20seat.jpeg',
     popular: true
   },
   {
@@ -31,7 +32,7 @@ const pricingPlans = [
       '300 MBPS internet',
       'Price includes electricity, AC, Office boy'
     ],
-    image: '/images/workspaces/meeting-room.png',
+    image: '/images/workspaces/Executive%20cabin.jpeg',
     popular: false
   },
   {
@@ -46,7 +47,7 @@ const pricingPlans = [
       '300 MBPS internet',
       'Price includes electricity, AC, Office boy'
     ],
-    image: '/images/workspaces/private office.png',
+    image: '/images/workspaces/Window%20side%20executive%20cabin.jpg',
     popular: false
   }
 ];
@@ -132,6 +133,7 @@ export default function PricingSection() {
                     ))}
                   </ul>
 
+                  <Link href="/contact">
                   <motion.button
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
@@ -139,6 +141,7 @@ export default function PricingSection() {
                   >
                     Get Started
                   </motion.button>
+                  </Link>
                 </div>
               </div>
             </motion.div>

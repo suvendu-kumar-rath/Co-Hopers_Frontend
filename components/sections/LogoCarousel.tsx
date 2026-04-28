@@ -97,7 +97,7 @@ export default function LogoCarousel() {
 
         {/* Infinite Scrolling Carousel */}
         <div 
-          className="relative"
+          className="relative hidden"
           onMouseEnter={() => setIsPaused(true)}
           onMouseLeave={() => setIsPaused(false)}
         >
@@ -152,7 +152,7 @@ export default function LogoCarousel() {
             <div className="theme-text-primary font-semibold text-base">Companies</div>
           </div>
           <div className="text-center space-y-2">
-            <AnimatedCounter end={14000} suffix="+" duration={3000} />
+            <AnimatedCounter end={20000} suffix="+" duration={3000} />
             <div className="theme-text-primary font-semibold text-base">Sq Ft Area</div>
           </div>
           <div className="text-center space-y-2">

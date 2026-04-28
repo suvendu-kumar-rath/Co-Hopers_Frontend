@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
+import Link from 'next/link';
 
 export default function FlexibleWorkspacesSection() {
   return (
@@ -42,14 +43,16 @@ export default function FlexibleWorkspacesSection() {
           
           {/* CTA Button Overlay */}
           <div className="absolute bottom-6 right-6">
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="btn-primary"
-            >
-              Book test day
-              <ArrowRight size={16} />
-            </motion.button>
+            <Link href="/contact">
+              <motion.span
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="btn-primary"
+              >
+                Book a Day Pass
+                <ArrowRight size={16} />
+              </motion.span>
+            </Link>
           </div>
         </motion.div>
       </div>

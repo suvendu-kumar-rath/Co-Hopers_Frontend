@@ -46,12 +46,12 @@ export default function WorkspaceSolutionsSection() {
                 rotateY: 5,
                 transition: { duration: 0.3, ease: "easeOut" }
               }}
-              className="text-center space-y-4 p-8 theme-bg-secondary rounded-lg hover:theme-bg-accent-primary hover:text-white transition-all duration-300 cursor-pointer group relative overflow-hidden"
+              className="text-center space-y-4 p-8 theme-bg-secondary rounded-lg hover:bg-cyan-500 hover:text-white transition-all duration-300 cursor-pointer group relative overflow-hidden"
               style={{ transformStyle: 'preserve-3d' }}
             >
               {/* Background gradient on hover */}
               <motion.div
-                className="absolute inset-0 bg-gradient-to-br from-[#004efb]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                 initial={{ scale: 0 }}
                 whileHover={{ scale: 1 }}
                 transition={{ duration: 0.3 }}
