@@ -157,15 +157,7 @@ export default function FooterSection() {
             </div>
             
             <div className="flex flex-wrap justify-center items-center gap-6 text-sm">
-              <div className="flex items-center gap-2">
-                <span className="theme-text-secondary text-sm">Theme:</span>
-                <ThemeSwitch />
-                <span className="theme-text-muted text-xs">
-                  {isSystemTheme ? '(Auto)' : '(Manual)'}
-                </span>
-              </div>
-              
-              {['Blog', 'Careers', 'Contact Us', 'Privacy Policy', 'Terms & Conditions'].map((link) => (
+              {['Careers', 'Privacy Policy', 'Terms & Conditions'].map((link) => (
                 <a
                   key={link}
                   href="#"
@@ -174,6 +166,12 @@ export default function FooterSection() {
                   {link}
                 </a>
               ))}
+              <a
+                href="/contact"
+                className="theme-text-secondary hover:theme-text-primary transition-colors duration-200"
+              >
+                Contact Us
+              </a>
             </div>
           </div>
         </motion.div>
