@@ -96,8 +96,6 @@ export default function Navbar() {
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ delay: index * 0.1 }}
                       href={item.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
                       className="theme-text-primary hover:text-[#00ffe0] px-3 py-2 text-sm font-medium transition-colors duration-200 uppercase tracking-wide"
                     >
                       {item.name}
@@ -149,8 +147,6 @@ export default function Navbar() {
                       animate={{ opacity: 1, x: 0 }}
                       transition={{ delay: index * 0.1 }}
                       href={item.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
                       className="theme-text-primary hover:text-[#00ffe0] block px-3 py-3 text-base font-medium w-full text-left transition-colors duration-200 uppercase tracking-wide"
                     >
                       {item.name}
